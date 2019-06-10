@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="stylesAssignment1.css">
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+th, td {
+	padding: 5px;
+}
+th {
+	text-align: left;
+}
+
+</style>
+</head>
+<body>
+
+<nav id="navigationBar">
+	<a href="calendar.html">Calendar</a> 
+	<a href="form.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form</a> 
+	<a href="myWidgets.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Widgets</a> 
+
+</nav>
+
+<table style = "width: 100%">
+	<caption> <p class= "thick"> <h1> Form </h1> </caption>
+</table>
+
+
+<div class="container">
+  <div class="third inline">
+	<form action="https://www-users.cs.umn.edu/~shaw0162/index.php">
+		<table id="t01">
+			<tr>
+				<th>
+					Event Name:
+				</th>
+				<th>
+					<input type="text" name="eventname">
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Start Time:
+				</th>
+				<th>
+					<input type="time" name="starttime">
+				</th>
+			</tr>
+			<tr>
+				<th>
+					End Time:
+				</th>
+				<th>
+					<input type="time" name="endtime">
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Location:
+				</th>
+				<th>
+					<input type="text" name="location">
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Day of the week:
+				</th>
+				<th>
+					<select name= "day">
+  						<option value="Monday">Monday</option>
+  						<option value="Tuesday">Tuesday</option>
+  						<option value="Wednesday">Wednesday</option>
+  						<option value="Thursday">Thursday</option>
+  						<option value="Friday">Friday</option>
+					</select>
+				</th>
+			</tr>
+			<tr>
+				<th>		
+				</th>
+				<th>
+					<input type="submit">
+					<input type="reset">
+				</th>
+			</tr>
+		</table>
+	</form>
+  </div>
+</div>
+
+</body>
+</html>

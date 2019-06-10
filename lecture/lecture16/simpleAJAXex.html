@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function loadAJAXTextDoc() // ensures this is not called till 
+                           // DOM is completely rendered
+{
+var xmlhttp;  // global var to hold XMLHttpRequest (AJAX) object
+
+
+
+xmlhttp=new XMLHttpRequest(); // create the AJAX obj
+alert("request created");
+xmlhttp.open("GET","AJAXex.txt",true); // Method, URL, Async flag
+alert("get request opened");
+xmlhttp.send(); // send the request to the server
+alert("request sent");
+
+  
+xmlhttp.onreadystatechange=function() //call back function 
+// function is called every time server updates request issued
+// by AJAX
+  {
+  alert("onreadystatechange function called");
+  var state = xmlhttp.readyState;
+  var status = xmlhttp.status;
+  alert("state and status "+state+" "+status);
+  if (xmlhttp.readyState==4 && xmlhttp.status == 200)
+    {
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }  // function called when onreadystatechange occurs
+  
+
+} // end loadAJAXTextDoc definiton
+</script>
+</head>
+<body>
+
+<div id="myDiv"><h2>AJAX will change this text when the button is clicked</h2></div>A
+<button type="button" onclick="loadAJAXTextDoc()">Change Content</button>
+
+</body>
+</html>

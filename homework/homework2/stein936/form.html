@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="stylesAssignment1.css">
+	<script type = "text/javascript" src = "form.js" > </script>
+
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+th, td {
+	padding: 5px;
+}
+th {
+	text-align: left;
+}
+
+</style>
+</head>
+<body>
+
+<nav id="navigationBar">
+	<a href="calendar.html">Calendar</a> 
+	<a href="form.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form</a> 
+	<a href="myWidgets.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Widgets</a> 
+
+</nav>
+
+<table style = "width: 100%">
+	<caption> <p class= "thick"> <h1 class="white"> FORM </h1> </caption>
+</table>
+
+
+<div class="container">
+  <div class="third inline">
+	<form onsubmit="return checkInput()" action="https://www-users.cs.umn.edu/~shaw0162/index.php">
+		<table id="t01">
+			<tr>
+				<th>
+					Event Name:
+				</th>
+				<th>
+					<label>
+						<input type="text" name="eventname" id="eventID" size=40 required>						
+					</label>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Start Time:
+				</th>
+				<th>
+					<input type="time" name="starttime" required>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					End Time:
+				</th>
+				<th>
+					<input type="time" name="endtime" required>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Location:
+				</th>
+				<th>
+					<label>
+						<input type="text" name="location" id="locationID" size=40 required>
+					</label>
+				</th>
+			</tr>
+			<tr>
+				<th>
+					Day of the week:
+				</th>
+				<th>
+					<select name= "day">
+  						<option value="Monday">Monday</option>
+  						<option value="Tuesday">Tuesday</option>
+  						<option value="Wednesday">Wednesday</option>
+  						<option value="Thursday">Thursday</option>
+  						<option value="Friday">Friday</option>
+					</select>
+				</th>
+			</tr>
+			<tr>
+				<th>		
+				</th>
+				<th>
+					<input type="submit" id="submit" value="Submit">
+					<input type="reset" id="reset" value="RESET">
+				</th>
+			</tr>
+		</table>
+	</form>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+#navigationBar {
+    background-color: lightgreen;
+    color: black;
+    padding: 40px;
+    text-align: left;
+    font-size: 150%;
+    display: block;
+} 
+table#t01 {
+    width: 100%;    
+    background-color: yellow;
+}
+body {
+    background-color: powderblue;
+}
+p.normal {
+	font-weight: normal;
+}
+p.day {
+    color: blue;
+	font-weight: bold;
+	font-family: courier;
+	font-size: 150%;
+}
+p.thick {
+	font-weight: bold;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    display: block;
+}
+
+/*credit to siabaJS from stack overflow, used his code below 
+		in order to center images and twitter tweet in HTML 5 */
+		
+.third{
+	width:100%;
+	margin:0;
+}
+
+.inline{
+	display:inline-block;
+}
+
+.container{
+	width:50%;
+	margin:0 auto;
+}
+
+

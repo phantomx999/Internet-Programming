@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<title> Calendar </title>
+	<link rel="stylesheet" type="text/css" href="stylesAssignment1.css">
+	<script type = "text/javascript" src = "calendar.js" > </script>
+	
+<style>
+table, th, td {
+	border: 5px solid black;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+th, td {
+	padding: 5px;
+}
+th {
+	text-align: left;
+}
+tr:nth-child(even){
+	background-color: GhostWhite 
+}
+
+</style>
+</head>
+<body>
+
+	<nav id="navigationBar">
+	<a href="calendar.html">Calendar</a> 
+	<a href="form.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form</a> 
+	<a href="myWidgets.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Widgets</a> 
+	</nav>
+
+<table style = "width: 100%">
+	<caption> <p class= "thick"> <h1 class="white"> MY SCHEDULE </h1> </caption>
+</table>
+
+<div class="container">
+  <div class="third inline"> 
+	<table id="t01">
+	<tr>
+		<th>
+			<p class= "day"> 
+			Monday
+			</p>
+		</th>
+		<th>
+			<p class= "normal"> 
+				<i>
+				6:30 - 8:30
+				</i>
+				<br>
+				<p class="location" > 
+			 		<font id="bathroom" onmouseover="showImage('bathroom.JPG', 'bathroom')"
+			 			onmouseenter= "showThumbnail('bathroom.JPG', 'bathroom', 'bR')"
+			 			onmouseleave="showThumbnail('', '', 'bR')">
+			 			Brush Teeth for 2 hours - My bathroom
+			 		</font>
+			 		<br>
+			 				<img id="bR" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>	  
+		   	</p>
+		</th>
+		<th> <!-- id="anderson1" onmouseover="showImage('andersonHall.JPG', 'Anderson_Hall')"> -->
+			<p class= "normal"> 
+				<i>
+				2:30 - 3:45
+				</i>
+				<br>	  
+			 	  <p class="location" > 
+			 	  		<font id="anderson" onmouseover="showImage('andersonHall.JPG', 'Anderson_Hall')"
+			 	  			onmouseenter= "showThumbnail('andersonHall.JPG', 'Anderson_Hall', 'aH1')"
+			 				onmouseleave="showThumbnail('', '', 'aH1')">
+			 				CSCI 4131 - Anderson Hall 370 
+			 			</font>
+			 			<br>
+			 				<img id="aH1" src="" alt="" style="width:60px;height:60px;">
+			 			<br>
+			 	  </p>
+		   	</p>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<p class= "day"> 
+			Tuesday
+			</p>
+		</th>
+		<th>
+		</th>
+		<th> 
+			<p class= "normal"> 
+				<i>
+			 	9:45 - 11:00
+			 	</i>
+			 	<br>	  
+			 	<p class="location" > 
+			 		<font id="tate" onmouseover="showImage('tateHall.JPG', 'Tate_Hall')"
+			 			onmouseenter= "showThumbnail('tateHall.JPG', 'Tate_Hall', 'tH1')"
+			 			onmouseleave="showThumbnail('', '', 'tH1')">
+			 			CSCI 3081W - Tate Hall 105 
+			 		</font>
+			 		<br>
+			 			<img id="tH1" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>
+			</p>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<p class= "day"> 
+			Wednesday
+			</p>
+		</th>
+		<th>
+			<p class= "normal"> 
+				<i>
+				6:30 - 8:30
+				</i>
+				<br>
+				<p class="location" > 
+			 		<font id="gym" onmouseover="showImage('gym.JPG', 'Gym')"
+			 				onmouseenter= "showThumbnail('gym.JPG', 'Gym', 'g1')"
+			 				onmouseleave="showThumbnail('', '', 'g1')">
+					 	Work Out  - Gym
+			 		</font>
+			 		<br>
+			 				<img id="g1" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>	  
+		   	</p>
+		</th>
+		<th> 
+			<p class= "normal"> 
+				<i>
+			 	2:30 - 3:45
+			 	</i>
+			 	<br>	  
+			 	<!--<p class="location" id="anderson"> CSCI 4131 - Anderson Hall 370 </p>-->
+			 	<p class="location" > 
+			 		<font id="anderson" onmouseover="showImage('andersonHall.JPG', 'Anderson_Hall')"
+			 				onmouseenter= "showThumbnail('andersonHall.JPG', 'Anderson_Hall', 'aH2')"
+			 				onmouseleave="showThumbnail('', '', 'aH2')">
+			 			CSCI 4131 - Anderson Hall 370 
+			 		</font>
+			 		<br>
+			 				<img id="aH2" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>
+			</p>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<p class= "day"> 
+			Thursday
+			</p>
+		</th>
+		<th></th>
+		<th> 
+			<p class= "normal"> 
+				<i>
+			 	9:45 - 11:00
+			 	</i>
+			 	<br>
+			 	<p class="location" > 
+			 		<font id="tate" onmouseover="showImage('tateHall.JPG', 'Tate_Hall')"
+			 			onmouseenter= "showThumbnail('tateHall.JPG', 'Tate_Hall', 'tH2')"
+			 			onmouseleave="showThumbnail('', '', 'tH2')">
+			 			CSCI 3081W - Tate Hall 105 
+			 		</font>
+			 		<br>
+			 			<img id="tH2" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>	  
+			</p>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<p class= "day"> 
+			Friday
+			</p>
+		</th>
+		<th></th>
+		<th> 
+			<p class= "normal"> 
+				<i>
+			 	9:05 - 9:55
+			 	</i>
+			 	<br>	
+			 	<p class="location" > 
+			 		<font id="keller" onmouseover="showImage('keller_hall.JPG', 'Keller_Hall')" 
+			 			onmouseenter= "showThumbnail('keller_hall.JPG', 'Keller_Hall', 'kH')"
+			 			onmouseleave="showThumbnail('', '', 'kH')">
+			 			CSCI 3081W - KH 2-150 
+			 		</font>
+			 		<br>
+			 			<img id="kH" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>	  
+			</p>
+		</th>
+	</tr>
+	</table>
+	
+	<br>
+		<img id="imageBelow" src="free_time.JPG" alt="free_time" width="100%">
+	
+  </div>
+</div> 
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+#navigationBar {
+    background-color: lightgreen;
+    color: black;
+    padding: 40px;
+    text-align: left;
+    font-size: 150%;
+    display: block;
+    border-style:groove;
+} 
+table#t01 {
+    width: 100%;    
+    background-color: lightblue;
+    border-style:ridge;
+}
+body {
+    background-color: black;
+}
+
+h1.white{
+	color: white;
+}
+
+p.normal {
+	font-weight: normal;
+}
+
+p.location {
+	font-weight:normal;
+}
+
+p.day {
+    color: blue;
+	font-weight: bold;
+	font-family: courier;
+	font-size: 150%;
+}
+p.thick {
+	font-weight: bold;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    display: block;
+}
+
+div.solid-border {
+	border-style: solid;
+	background-color: gray;
+}
+
+p.tictactoeHeaderText {
+	color: white;
+	font-weight: bold;
+	font-size: 150%;	
+}
+
+.tictactoeText {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	background-color:white;
+}
+
+
+#tictactoeTable {
+	width:100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	table-layout: auto;
+	background-color: white;
+}
+
+.tictactoeTable th, td{
+		border: 1px solid black;
+		padding: 5px;
+}
+
+.blue1{
+	background-color:blue;
+	text-transform: capitalize;
+	color:white;
+	text-align: center;
+	font-weight:bold;
+}
+
+.red1{
+	background-color:red;
+	text-transform: capitalize;
+	color:yellow;
+	text-align: center;
+	font-weight:bold;
+}
+
+.whiteText{
+	color:white;
+} 
+
+/*credit to siabaJS from stack overflow, used his code below 
+		in order to center images and twitter tweet in HTML 5 */
+		
+.third{
+	width:100%;
+	margin:0;
+}
+
+.inline{
+	display:inline-block;
+}
+
+.container{
+	width:50%;
+	margin:0 auto;
+}
+
+.imgdisplay {
+    float: left;
+    width: 33.33%;
+}
+.thinkTwitFollow {
+    clear: both;
+}
+#input_google_form{
+	background-color: white;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<title>My Widgets</title>
+	  
+	<link rel="stylesheet" type="text/css" href="stylesAssignment1.css">
+	<script type = "text/javascript" src = "myWidgets.js" > </script>
+
+</head>
+<body>
+
+<nav id="navigationBar">
+	<a href="calendar.html">Calendar</a> 
+	<a href="form.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form</a> 
+	<a href="myWidgets.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Widgets</a> 
+</nav>
+
+<br><br>
+
+<table style = "width: 100%">
+	<caption> <p class= "thick"> <h1 class="white"> MY WIDGETS </h1> </caption>
+</table>
+
+<div class="container">
+  <div class="third inline"> 
+	<iframe width="500" height="350"
+	src="https://www.youtube.com/embed/watch?v=7Iweue-OcMo&list=RD7Iweue-OcMo&index=1"
+	frameborder="1" allow="utoplay; encrypted-media" allowfullscreen></iframe>
+	
+	<br><br>
+	<!--<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Elon Musk says humanity is trapped in real life MATRIX – and here&#39;s why - <a href="https://t.co/XKzS0rRcI8">https://t.co/XKzS0rRcI8</a> <a href="https://t.co/ezqM2qLESP">https://t.co/ezqM2qLESP</a> <a href="https://t.co/aAycyWfdaR">pic.twitter.com/aAycyWfdaR</a></p>&mdash; Joe Rogan Experience (@JREpodcast) <a href="https://twitter.com/JREpodcast/status/1039615710090027008?ref_src=twsrc%5Etfw">September 11, 2018</a></blockquote>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+	
+	<a class="twitter-timeline" href="https://twitter.com/joerogan?ref_src=twsrc%5Etfw" 
+		data-tweet-limit="3" data-width="600" data-height="100">
+			Tweets by joerogan</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<br><br>
+
+	<div class="solid-border">	  
+		<p class="tictactoeHeaderText">  TIC TAC TOE </p>
+		<p class="tictactoeHeaderText">  Enter Cell Name: 
+			<input type="text" id="cell_name" value=""> </p>
+		<p class="tictactoeHeaderText">  Select Cell Color: 
+			<select id="col">
+  						<option value="rred">RED &nbsp;(O)</option>
+  						<option value="bblue">BLUE &nbsp;(X)</option>
+			</select>
+		</p>
+			<button id="submit" onclick= "submitCell('cell_name', 'col')"> ENTER </button> 	
+			<button id="reset" onclick= "resetBoard()"> RESET </button>
+	
+		<div class="container">
+  			<div class="third inline">    
+				<table id="tictactoeTable"> 					
+					<tr>
+						<td id="one" class ="tictactoeText"> <p>  one  </p> </td>
+						<td id="two" class ="tictactoeText">  <p> two  </p> </td>
+						<td id="three" class ="tictactoeText">  <p> three </p> </td>
+					</tr>
+					<tr>
+						<td id="four" class ="tictactoeText">  <p> four  </p> </td>
+						<td id="five" class ="tictactoeText"> <p> five </p>  </td>
+						<td id="six" class ="tictactoeText"> <p> six </p> </td>
+					</tr>
+					<tr>
+						<td id="seven" class ="tictactoeText"> <p> seven </p> </td>
+						<td id="eight" class ="tictactoeText"> <p> eight </p> </td>
+						<td id="nine" class ="tictactoeText"> <p> nine </p> </td>
+					</tr>
+				</table> 
+			</div> 
+		</div> 
+	</div>
+
+  </div>
+</div> 
+
+</body>
+</html>

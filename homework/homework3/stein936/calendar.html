@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset ="utf-8">
+	<meta name="viewport" content="initial-scale=1.0">
+	<title> Calendar </title>
+	<link rel="stylesheet" type="text/css" href="stylesAssignment1.css">
+	<script type = "text/javascript" src = "calendar.js" > </script>
+
+	
+<style>
+table, th, td {
+	border: 5px solid black;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+th, td {
+	padding: 5px;
+}
+th {
+	text-align: left;
+}
+tr:nth-child(even){
+	background-color: GhostWhite 
+}
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+        width: 70%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+</style>
+</head>
+<body>
+
+	<nav id="navigationBar">
+	<a href="calendar.html">Calendar</a> 
+	<a href="form.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Form</a> 
+	<a href="myWidgets.html">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My Widgets</a> 
+	</nav>
+
+
+<div id="google_translate_element" value="Select Language"></div>
+	<script type="text/javascript">
+   function googleTranslateElementInit() {
+   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+     </script>
+
+     <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+<table style = "width: 100%">
+	<caption> <p class= "thick"> <h1 class="white"> MY SCHEDULE </h1> </caption>
+</table>
+
+<div class="container">
+  <div class="third inline"> 
+	<table id="t01">
+	<tr>
+		<th>
+			<p class= "day"> 
+			Monday
+			</p>
+		</th>
+		<th>
+			<p class= "normal"> 
+				<i>
+				6:30 - 8:30
+				</i>
+				<br>
+				<p class="location" > 
+			 		<font id="bathroom" 
+			 			onmouseenter= "showThumbnail('bathroom.JPG', 'bathroom', 'bR')"
+			 			onmouseleave="showThumbnail('', '', 'bR')">
+			 			Brush Teeth for 2 hours - My bathroom
+			 			<br>
+			 			16671 North Hillcrest Ct. Eden Prairie MN 55346
+			 		</font>
+			 		<br>
+			 				<img id="bR" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>	  
+		   	</p>
+		</th>
+		<th> <!-- id="anderson1" onmouseover="showImage('andersonHall.JPG', 'Anderson_Hall')"> -->
+			<p class= "normal"> 
+				<i>
+				2:30 - 3:45
+				</i>
+				<br>	  
+			 	  <p class="location" > 
+			 	  		<font id="anderson" 
+			 	  			onmouseenter= "showThumbnail('andersonHall.JPG', 'Anderson_Hall', 'aH1')"
+			 				onmouseleave="showThumbnail('', '', 'aH1')">
+			 				CSCI 4131 - Anderson Hall 370 
+			 				<br>
+			 			    257 19th Ave S, Minneapolis, MN 55455
+			 			</font>
+			 			<br>
+			 				<img id="aH1" src="" alt="" style="width:60px;height:60px;">
+			 			<br>
+			 	  </p>
+		   	</p>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<p class= "day"> 
+			Tuesday
+			</p>
+		</th>
+		<th>
+		</th>
+		<th> 
+			<p class= "normal"> 
+				<i>
+			 	9:45 - 11:00
+			 	</i>
+			 	<br>	  
+			 	<p class="location" > 
+			 		<font id="tate" 
+			 			onmouseenter= "showThumbnail('tateHall.JPG', 'Tate_Hall', 'tH1')"
+			 			onmouseleave="showThumbnail('', '', 'tH1')">
+			 			CSCI 3081W - Tate Hall 105 
+			 			<br>
+					 	116 Church St SE, Minneapolis, MN 55455
+			 		</font>
+			 		<br>
+			 			<img id="tH1" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>
+			</p>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<p class= "day"> 
+			Wednesday
+			</p>
+		</th>
+		<th>
+			<p class= "normal"> 
+				<i>
+				6:30 - 8:30
+				</i>
+				<br>
+				<p class="location" > 
+			 		<font id="gym" 
+			 				onmouseenter= "showThumbnail('gym.JPG', 'Gym', 'g1')"
+			 				onmouseleave="showThumbnail('', '', 'g1')">
+					 	Work Out - Gym
+					 	<br>
+					 	1710 MN-7, Hopkins, MN 55343
+			 		</font>
+			 		<br>
+			 				<img id="g1" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>	  
+		   	</p>
+		</th>
+		<th> 
+			<p class= "normal"> 
+				<i>
+			 	2:30 - 3:45
+			 	</i>
+			 	<br>	  
+			 	<!--<p class="location" id="anderson"> CSCI 4131 - Anderson Hall 370 </p>-->
+			 	<p class="location" > 
+			 		<font id="anderson" 
+			 				onmouseenter= "showThumbnail('andersonHall.JPG', 'Anderson_Hall', 'aH2')"
+			 				onmouseleave="showThumbnail('', '', 'aH2')">
+			 			CSCI 4131 - Anderson Hall 370 
+			 			<br>
+			 			257 19th Ave S, Minneapolis, MN 55455
+			 		</font>
+			 		<br>
+			 				<img id="aH2" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>
+			</p>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<p class= "day"> 
+			Thursday
+			</p>
+		</th>
+		<th></th>
+		<th> 
+			<p class= "normal"> 
+				<i>
+			 	9:45 - 11:00
+			 	</i>
+			 	<br>
+			 	<p class="location" > 
+			 		<font id="tate" 
+			 			onmouseenter= "showThumbnail('tateHall.JPG', 'Tate_Hall', 'tH2')"
+			 			onmouseleave="showThumbnail('', '', 'tH2')">
+			 			CSCI 3081W - Tate Hall 105 
+			 			<br>
+					 	116 Church St SE, Minneapolis, MN 55455
+			 		</font>
+			 		<br>
+			 			<img id="tH2" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>	  
+			</p>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<p class= "day"> 
+			Friday
+			</p>
+		</th>
+		<th></th>
+		<th> 
+			<p class= "normal"> 
+				<i>
+			 	9:05 - 9:55
+			 	</i>
+			 	<br>	
+			 	<p class="location" > 
+			 		<font id="keller" 
+			 			onmouseenter= "showThumbnail('keller_hall.JPG', 'Keller_Hall', 'kH')"
+			 			onmouseleave="showThumbnail('', '', 'kH')">
+			 			CSCI 3081W - KH 2-150 
+			 			<br>
+			 			200 Union St SE, Minneapolis, MN 55455
+			 		</font>
+			 		<br>
+			 			<img id="kH" src="" alt="" style="width:60px;height:60px;">
+			 		<br>
+			 	</p>	  
+			</p>
+		</th>
+	</tr>
+	</table>
+	
+	<br>
+	<!--	<img id="imageBelow" src="free_time.JPG" alt="free_time" width="100%"> -->
+	
+  </div>
+</div> 
+
+	<div id="map"></div>
+	<div id="input_google_form">
+	<form>
+		<p>Find: </p> <select id="type_search" name= "place">
+  						<option value="restaurant">restaurant</option>
+  						<option value="hospital">hospital</option>
+  						<option value="parking">parking</option>
+  						<option value="supermarket">supermarket</option>
+  						<option value="other">other</option>
+			 		 </select>
+			  <input type="text" id="find" size=40>
+			 <p>in</p>
+		<input type="text" id="meters" name="meter" >	
+			  <p> meters </p>
+		<input type="button" id="submit" value="Search">
+	</form>
+	</div>
+	
+    <script>
+      var marker2;
+	  var infowindow2;
+      var map;
+      var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+      function initMap() {
+         map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 44.9727, lng: -93.23450000000003},
+          zoom: 14
+        });
+        
+        var geocoder = new google.maps.Geocoder(); // Create a geocoder object
+
+        var Locations = [document.getElementById('gym').textContent, 
+		document.getElementById('bathroom').textContent,
+		document.getElementById('anderson').textContent, 
+		document.getElementById('tate').textContent, 
+		document.getElementById('keller').textContent];	
+		
+		for(i = 0; i < Locations.length; i++){
+			geocodeAddress(geocoder, map, Locations[i]);
+		} 
+		
+		
+		//geocodeAddress(geocoder, map, location); 
+      }
+      function geocodeAddress(geocoder, resultsMap, address) {
+ 
+		geocoder.geocode({'address': address}, function(results, status) {
+			if (status === google.maps.GeocoderStatus.OK) {
+					resultsMap.setCenter(results[0].geometry.location);
+					marker2 = new google.maps.Marker({
+								map: resultsMap,
+								position: results[0].geometry.location,
+								title:address,
+								icon: iconBase + 'library_maps.png'
+								});
+					infowindow2 = new google.maps.InfoWindow({
+								content: address
+								});
+    
+					google.maps.event.addListener(marker2, 'mouseover', createWindow(resultsMap,infowindow2, marker2));
+			} else {
+					alert('Geocode was not successful for the following reason: ' + status);
+			} //end if-then-else
+		}); // end call to geocoder.geocode function
+	} // end geocodeAddress function
+	
+	// Function to return an anonymous function that will be called when the rmarker created in the 
+    // geocodeAddress function is clicked	
+	function createWindow(rmap, rinfowindow, rmarker){
+              return function(){
+				rinfowindow.open(rmap, rmarker);
+            }
+    }//end create (info) window   
+     
+    </script>      
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpg_KJ_-fwHbQ5rLx8igKvNgvtlRAmed4&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpg_KJ_-fwHbQ5rLx8igKvNgvtlRAmed4&callback&libraries=places"></script>
+
+
+</body>
+</html>
